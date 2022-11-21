@@ -1,7 +1,7 @@
-const path = require("path")
+const path = require('path');
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(
     `
@@ -15,23 +15,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
-    `
-  )
+    `,
+  );
 
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
-  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const pageTemplate = path.resolve(`./src/templates/page.js`);
   result.data.allSanityPage.nodes.forEach(({ id, slug }) => {
     createPage({
       ownerNodeId: id,
       path: `/${slug.current}`,
       component: pageTemplate,
       context: {
-        slug: slug.current
+        slug: slug.current,
       },
-    })
-  })
-}
+    });
+  });
+};
