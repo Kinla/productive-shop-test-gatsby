@@ -17,7 +17,7 @@
   "dependencies": {
     "@portabletext/react": "^2.0.0",
     "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^4.24.0",
+    "gatsby": "^5.0.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-sharp": "^5.0.0",
@@ -31,6 +31,5 @@
     "styled-components": "^5.3.6"
   },
   "main": "gatsby-config.js",
-  "devDependencies": {},
   "license": "ISC"
 }
