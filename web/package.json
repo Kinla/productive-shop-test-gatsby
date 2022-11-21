@@ -1,0 +1,36 @@
+{
+  "name": "company",
+  "version": "1.0.0",
+  "private": true,
+  "description": "company",
+  "author": "sc-searchengineunity",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@portabletext/react": "^2.0.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.24.0",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-styled-components": "^6.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-source-sanity": "^7.5.1",
+    "gatsby-transformer-sharp": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.6"
+  },
+  "main": "gatsby-config.js",
+  "devDependencies": {},
+  "license": "ISC"
+}
